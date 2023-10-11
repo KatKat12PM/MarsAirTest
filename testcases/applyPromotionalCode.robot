@@ -5,6 +5,7 @@ Resource    ../keywords/bookTickets.robot
 
 *** Test Cases ***
 Scenario: Verify the discount percentage of the promotional code
+    [Tags]    TC#2-005
     [Documentation]    This case should be test covered by unit test
     [Template]  Verify the discount percentage of the promotional code
     #departure  #return  #promotionalCode #expectedDiscount
@@ -13,6 +14,7 @@ Scenario: Verify the discount percentage of the promotional code
     July  December (two years from now)    AB7-OPQ-119    70%  
 
 Scenario: Verify the final digit of the promotional code when the final digit is correct
+    [Tags]    TC#2-006
     [Documentation]    This case should be test covered by unit test
     [Template]  Verify the final digit of the promotional code
     #departure  #return  #promotionalCode #expectedMessage
@@ -22,6 +24,7 @@ Scenario: Verify the final digit of the promotional code when the final digit is
     
   
 Scenario: Verify the final digit of the promotional code when the final digit is incorrect
+    [Tags]    TC#2-007
     [Documentation]    This case should be test covered by unit test
     [Template]  Verify the final digit of the promotional code
     #departure  #return  #promotionalCode #expectedMessage
@@ -30,6 +33,7 @@ Scenario: Verify the final digit of the promotional code when the final digit is
 
 
 Scenario: User is unable to apply a promotion code when using an invalid promotional code
+    [Tags]    TC#2-002
     [Documentation]    This case should be test covered by unit test
     [Template]  Verify the final digit of the promotional code
     #departure  #return  #promotionalCode #expectedMessage
